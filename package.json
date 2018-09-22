@@ -10,7 +10,8 @@
   "scripts": {
     "start": "node app.js",
     "build": "browserify -r jquery > public/js/bundle.js",
-    "cleanup": "mongo express-todo --eval 'db.todos.remove({});'"
+    "cleanup": "mongo express-todo --eval 'db.todos.remove({});'",
+    "postdeploy": "touch e31a1513f7f501df0a76131ccab5187a.txt"
   },
   "dependencies": {
     "body-parser": "1.9.0",
